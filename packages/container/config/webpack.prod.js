@@ -8,7 +8,8 @@ const domain = process.env.PROD_DOMAIN || 'http://localhost:8081';
 const prodConfig = {
     mode: 'production',
     output: {
-        filename: '[name].[contenthash].js'
+        filename: '[name].[contenthash].js',
+        publicPath: '/container/latest/'
     },
     plugins: [
         new ModuleFederationPlugin({
