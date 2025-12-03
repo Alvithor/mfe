@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { mount as MarketingMount } from 'marketing/MarketingApp';
 
 export default () => {
-    // Test comment for updated CI/CD ABC
+    // Test comment for updated CI/CD ABD
     const ref = useRef(null);
 
     useEffect(() => {
