@@ -11,6 +11,8 @@ const mount = ($el, { onNavigate, defaultHistory, initialPath }) => {
     if (onNavigate) 
         history.listen(onNavigate);
 
+
+    console.log($el, App);
     ReactDOM.render(<App history={history} />, $el);
 
     return {
